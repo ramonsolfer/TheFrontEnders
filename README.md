@@ -31,7 +31,7 @@ O objetivo deste segundo projeto em grupo era criar um produto para a empresa Fr
 
 ## Demonstração
 
-Link do GitHub pages para abrir a página direto do navegador sem precisar instalar nada: 
+Link do GitHub pages para abrir a página direto do navegador sem precisar instalar nada: https://ramonsolfer.github.io/TheFrontEnders/
 
 
 ## Instalação
