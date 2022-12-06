@@ -1,0 +1,113 @@
+<!DOCTYPE HTML>
+<HTML lang="pt-br">
+
+<head>
+    <meta charset="UTC-8"> <!-- identifica os sinais de linguagem-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><!-- compatibilidade no navegador-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- tamanho da tela -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/Cadastro.css"><!-- chamada do CSS-->
+    <script src="../Javascript/cadastro.js" defer></script> <!-- carrega o JavaScript-->
+    <link rel="icon" href="../imagens/icone2.png">
+
+    <title>Cadastro</title>
+</head>
+
+<body>
+    <nav class="barranav">
+        <h1 class="logo">TheFrontEnders</h1>
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../HTML/saibamais.html">Serviços</a></li>
+            <li><a href="../HTML/contatos.html">Contato</a></li>
+            <li class="ctn"><a href="../HTML/login.html">Entrar</a></li>
+        </ul>
+        <img src="../imagens/menu-btn.png" alt="" class="menu-btn">
+    </nav>
+
+    <main class="container">
+        <form class="formulario">
+            <div class="caixa-title-btn">
+                <label class="forma-title">
+                    <h1>Cadastre-se</h1>
+                </div>
+            </div> 
+            
+            <div class="gp-pessoal">
+
+                <div class="entrada">
+                    <label class="title-caixa" for="name">Nome:</label>
+                    <input class="ddpessoal" type="text" placeholder="Nome" name="nome" id="nome" required>
+                </div>
+
+                <div class="entrada">
+                    <label class="title-caixa" for="RG">RG:</label>
+                    <input class="ddpessoal" type="number" placeholder="RG" name="rg" id="rg" required>
+                </div>
+
+                <div class="entrada">
+                    <label class="title-caixa" for="email">E-mail:</label>
+                    <input class="ddpessoal" type="email" placeholder="Email" name="email" id="email" required>
+                </div>
+
+                <div class="entrada">
+                    <label class="title-caixa" for="Celular">Celular:</label>
+                    <input class="ddpessoal" type="number" placeholder="(xx) xxxxx-xxx" name="Celular" id="Celular" required>
+                </div>
+
+                <div class="entrada">
+                    <label class="title-caixa" for="Senha">Senha:</label>
+                    <input class="ddpessoal" type="password" placeholder="Senha" id="senha" required>
+                </div>
+                <br>
+                <div class="entrada">
+                    <label class="title-caixa" for="Confirm-senha">Confirme Senha:</label>
+                    <input class="ddpessoal" type="password" placeholder="Confirme senha" name="c_senha" id="c_senha" required>
+                </div>
+            </div>
+        <hr>
+            <div class="gp-endereço">
+                <label class="ender-title">Endereço:</label><br>
+                
+                <div class="entrada-endereço">
+                    <label class="title-caixa2" for="CEP">CEP:</label>
+                    <input class="ddendereço" type="number" placeholder="CEP" name="cep" id="cep" >
+                </div>
+                <div class="entrada-endereço">
+                    <label class="title-caixa2" for="rua">Logradouro:</label>
+                    <input class="ddendereço" type="text" placeholder="AV./Estrada/Rua" name="rua" id="rua" disabled>
+                </div>
+                <div class="entrada-endereço">
+                    <label class="title-caixa2" for="numero">Número:</label>
+                    <input class="ddendereço" type="number" placeholder="xx" name="numero" id="numero" >
+                </div>
+                <div class="entrada-endereço">
+                    <label class="title-caixa2" for="bairro">Bairro:</label>
+                    <input class="ddendereço" type="text" placeholder="Bairro" name="bairro" id="bairro" disabled>
+                </div>
+                <div class="entrada-endereço">
+                    <label class="title-caixa2" for="cidade">Cidade:</label>
+                    <input class="ddendereço" type="text" placeholder="Cidade" name="cidade" id="cidade" disabled>
+                </div>
+                <div class="entrada-endereço">
+                    <label class="title-caixa2" for="estado">Estado:</label>
+                    <input class="ddendereço" type="text" placeholder="U.F." name="estado" id="estado" disabled>
+                </div>
+                <div class="entrada-endereço">
+                    <label class="title-caixa2" for="complemento">Complemento:</label>
+                    <input class="ddendereço" type="text" placeholder="Complemento" id="complemento" >
+                </div>
+<br>
+                <input type="button" value="Cadastrar" id="cadastrar" class="btn-default" href="../index.html">
+            </div>
+
+        </form>
+        <div class="form-image">
+            <img src="../imagens/cadastro1.gif" alt="">
+        </div>
+    </main>    
+
+    <script src="../JavaScript/home.js"></script>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"> </script>
+</html>

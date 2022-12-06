@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root { 
+    /*claro*/
+    --color-light-50: #f8fafc;
+
+    /*escuro*/
+    --color-dark-50: #797984;
+    --color-dark-100: #312d37;
+    --color-dark-900: #000;
+
+    /*azul*/
+    --color-blue-1: rgb(118, 153, 248);
+    --color-blue-2: rgb(68, 152, 248)
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body *{
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--color-blue-2);
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+a {
+    text-decoration: none;
+}
+/* tirar a bolinha de listagem*/
+ul {
+    list-style: none;
+}
+/*marcar a página onde a pessoa está no menu*/
+.ativo {
+    color: rgb(68, 152, 248);
+    text-decoration: none;
+    font-weight: 1000;
+}
+/*menu*/
+.barranav {
+    position: absolute;
+    top: 0;
+    left: 0; 
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    color: rgb(255, 255, 255);
+}
+/* mudar a cor da empresa*/
+.barranav a {
+    color: rgb(255, 255, 255);
+}
+.barranav a:hover {
+    color: rgb(0, 0, 0);
+}
+
+/*mudar a span*/
+.barranav .logo span {
+    color: rgb(102, 159, 244);
+}
+/* links dos menus */
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+.nav-links > li {
+    margin: 0px 30px;
+}
+ul > a {
+    color: white;
+}
+.menu-btn {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    width: 40px;
+    cursor: pointer; 
+    display: none;
+}
+.form-image {
+    width: 60%;
+    height: 100%;
+    background-color: var(--color-light-50);
+    justify-content: center;
+    align-items: center;
+    min-width: auto;
+    max-width: auto;
+    border-radius: 30px 20px 20px 20px;
+}
+
+.form-image img{
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    border-radius: 40px 20px 20px 20px;
+}
+
+.container {
+    color: var(--color-light-50);
+    width: 80%;
+    height: 80%;
+    display: inline-flex;
+    background: rgb(51, 81, 121);
+    border-radius: 0px 20px 20px 20px;
+    flex-direction: row;
+}
+
+.caixa-title-btn {
+    padding: 0%;
+    margin-left: 20%;
+    margin-top: 10%;
+    display: flex;
+}
+
+
+
+.forma-title label{
+    border: none;
+    display: inline;
+    justify-content:center;
+    align-content: right;
+    font-size: 14px;
+    margin-left: 0px;
+
+}
+
+.forma-title h2::after {
+    content: '';
+    display: block;
+    width: 7rem;
+    height: 0.2rem;
+    background-color: var(--color-blue-2);
+    margin-left: 60%;
+    border-radius: 10px;
+}
+
+.form_recupera {
+    margin: 20px 20px 20px 20px;
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.recupera{
+    justify-content: space-between;
+    align-items: center; 
+    margin-top: 10%;
+    display: inline-flexbox;
+}
+
+.palavras_amiga label{
+    justify-items: center;
+    font-size: 25px;
+    font-weight: 300;
+    margin: 0px ;
+}
+
+.entrada{
+    margin-top: 10%;
+    border: none;
+    flex-direction: row;
+}
+
+label.title-caixa {
+    width: 30%;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--color-blue-1);
+}
+
+.ddpessoal {
+    margin: 5px 20px 10% 5px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px var(--color-blue-2);
+    font-size: 14px;
+    width: 300px;
+    justify-content: center;
+    align-content: center;
+}
+
+.env-button {
+    margin: 30px 30px 30px 10%;
+    border: none;
+    align-content: center;
+}
+
+.env-button button {
+    border: none;
+    background-color: #6c63ff;
+    padding: 0.6rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.env-button button:hover {
+    background-color: #190ee0f1;
+}
+
+.env-button button a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #fff;
+}
+
+.lembrei {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+@media only screen and (max-width: 850px){
+    .menu-btn {
+        display: block;
+        margin: 10px 0px
+    }
+    .barranav {
+        padding: 0;
+    }
+    .barranav a {
+        color: rgb(255, 255, 255);
+    }
+    .logo {
+        position: absolute;
+        top: 30px;
+        left: 30px;
+    }
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        background-color: rgb(102, 134, 182);
+        transition: 0.3s ease-in;
+        margin-top: -900px;
+    }
+    .mobile-menu {
+        margin-top: 0px;
+        border-bottom-right-radius: 30%;
+    }
+    .nav-links > li {
+        margin: 30px auto;
+    }
+}

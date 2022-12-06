@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+/*reset basico de CSS*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* body sem barra de rolagem da direita para a esquerda*/
+body {
+    overflow-x: hidden;
+}
+/* mudar todos os atributos apenas do body para ter a mesma font*/
+body * {
+    font-family: 'Poppins', sans-serif;
+/* tirar o sublinhado dos links*/
+}
+a {
+    text-decoration: none;
+}
+/* tirar a bolinha de listagem*/
+ul {
+    list-style: none;
+}
+/*marcar a página onde a pessoa está no menu*/
+.ativo {
+    color: rgb(68, 152, 248);
+    text-decoration: none;
+    font-weight: 1000;
+}
+/*menu*/
+.barranav {
+    position: absolute;
+    top: 0;
+    left: 0; 
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    color: rgb(255, 255, 255);
+}
+/* mudar a cor da empresa*/
+.barranav a {
+    color: rgb(255, 255, 255);
+}
+.barranav a:hover {
+    color: rgb(117, 158, 245);
+}
+
+/*mudar a span*/
+.barranav .logo span {
+    color: rgb(102, 159, 244);
+}
+/* links dos menus */
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+.nav-links > li {
+    margin: 0px 30px;
+}
+ul > a {
+    color: white;
+}
+/* a primeira parte do site que eu decidi ser um header com a background image*/
+header {
+    width: 100vw;   
+    height: 150vh;
+    background-image: url(../imagens/fotoprincipal.png);
+    background-position: bottom;
+    background-size: cover;
+    background-color: #000000;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+/* o texto do header*/
+.header-conteudo {
+    margin-bottom: 150px;
+    color: white;
+    text-align: center;
+}
+/* a cor do span do header*/
+.header-conteudo span {
+    color: rgb(76, 144, 247);
+}
+/* h2 do header*/
+.header-conteudo > h2 {
+    font-size: 4vmin;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+
+}
+/* linha embaixo do texto*/
+.linha {
+    width: 150px;
+    height: 4px;
+    background: rgb(68, 152, 248);
+    margin: 10px auto;
+    border-radius: 5px;
+    visibility: hidden;
+}
+/* h1 do header*/
+.header-conteudo > h1 {
+    font-size: 7vmin;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+
+}
+/* botão do saiba mais de todas a páginas*/
+.ctn {
+    padding: 8px 15px;
+    background: rgb(68, 152, 248);
+    border-radius: 30px;
+    color: white;
+    transition: 0.5s ease;
+}
+/*botão do menu*/
+.menu-btn {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    width: 40px;
+    cursor: pointer; 
+    display: none;
+}
+/* todas as sections da página*/
+section {
+    width: 80%;
+    margin: 80px auto;
+}
+/*titulo das sections*/
+.titulo {
+    text-align: center;
+    font-size: 4vmin;
+    color: rgb(67, 99, 146);
+    height: 20vh;
+}
+/*produtos com visibility hidden para o java revelar ele quando houver rolagem*/
+.produtos {
+    visibility: hidden;
+}
+/* linha da parte do produto*/
+.produtos .linha {
+    width: 350px;
+}
+/* fileira de items*/
+.fileira {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-evenly;
+}
+/* coluna para dividir os itens*/
+.fileira .coluna {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* imagem das colunas dos itens*/
+.coluna > img {
+    width: 30vw;
+    height: 45vh;
+}
+/* para separar um pouco cada coluna de item*/
+.produtos .fileira {
+    margin-top: 20px;
+    gap: 40px;
+}
+/* card dos itens*/
+.produtos .fileira .coluna {
+    background: rgba(255, 255, 255, 0.1);
+    height: 90vh;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+}
+/* imagem dos itens */
+.produtos .fileira img {
+    margin-top: 60px;
+}
+/* h4 dos itens*/
+h4 {
+    font-size: 2.5vmin;
+    color: rgb(67, 99, 146);
+    margin: 20px 35px;
+}
+/* texto dos itens*/
+p {
+    color: black;
+    padding: 0px 40px;
+}
+/* botões dos itens*/
+.produtos .ctn {
+    margin-top: 30px;
+}
+/*parte de abra sua conta*/
+.criarconta {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../imagens/robonamesa2.png);
+    background-color: rgb(103, 118, 150);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+/* texto da parte de abra sua conta*/
+.criarconteudo {
+    width: 60%;
+    padding: 50px;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+/* h1 do abra sua conta*/
+.criarconteudo > h1 {
+    font-size: 4vmin;
+    color: white;
+}
+/* linha do abra sua conta */
+.criarconteudo > .linha {
+    margin-bottom: 50px;
+    width: 15vw;
+}
+/* texto do abra sua conta*/
+.criarconteudo > p {
+    color: white;
+    margin: 50px;
+}
+/* margin do botão*/
+.criarconteudo > .ctn {
+    margin-top: 40px;
+}
+/* parte dos contatos */
+.contatos > .fileira > .coluna {
+    width: 50%;
+}
+/* foto dos contatos*/
+.contatos > .galeria {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+}
+/* imagens */
+.galeria > img {
+    max-width: 15vw;
+    margin: 10px;
+}
+/* h1 da parte de contatos*/
+.contatos h1 {
+    font-size: 15vmin;
+    color: rgb(67, 109, 163);
+}
+/* linha da parte de contatos*/
+.contatos .linha {
+    margin-left: 25px;
+}
+/* texto da parte de contatos */
+.contatos p {
+    padding: 0;
+    margin: 30px auto;
+}
+/* botão da parte de contatos*/
+.contatos .ctn {
+    margin-left: -100px;
+}
+/* rodapé da página */
+.footer {
+    width: 100%;
+    height: 200px;
+    padding: 20px 80px;
+    margin: 0;
+    background:rgb(51, 81, 121);
+    text-align: center;
+}
+/* texto do rodapé*/
+.footer p {
+    color: whitesmoke;
+    margin: 20px auto;
+}
+/* responsividade da página*/
+@media only screen and (max-width: 850px){
+    .menu-btn {
+        display: block;
+        margin: 25px 0px;
+        color: white;
+    }
+    .barranav {
+        padding: 0;
+    }
+    .barranav a {
+        color: rgb(255, 255, 255);
+    }
+    .logo {
+        position: absolute;
+        top: 30px;
+        left: 30px;
+    }
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        background-color: rgb(102, 134, 182);
+        transition: 0.3s ease-in;
+        margin-top: -900px;
+    }
+    .mobile-menu {
+        margin-top: 0px;
+        border-bottom-right-radius: 30%;
+    }
+    .nav-links > li {
+        margin: 30px auto;
+    }
+    .fileira {
+        flex-direction: column;
+    }
+    .fileira .coluna {
+        margin: 20px 50px;
+    }
+    .coluna img {
+        max-width: 90%;
+    }
+    .produtos .fileira .coluna{
+        height: 95vh;
+    }
+    .criarconteudo {
+        width: 100%;
+        
+    }
+    .produtos .col {
+        width: 100%;
+    }
+    .galeria {
+        justify-content: center;
+        align-items: center;
+    }
+    .galeria img {
+        width: 90%;
+    }
+    .footer {
+        padding: 10px;
+    }
+    .produtos .coluna img {
+        width: 80vw;
+    }
+ }
+ img {
+    transition: transform .3s ease;
+ }
+ img:hover {
+    transform: scale(1.1);
+ }
+ .ctn:hover {
+    background: #ffff;
+    color: rgb(102, 134, 182);
+    box-shadow: 2px 2px 5px black;
+ }
+ li:hover {
+    color: white;
+    cursor: pointer;
+ }
+ @media only screen and (max-width: 425px){
+    .produtos .fileira .coluna{
+        height: 100vh;
+        width: 85vw;
+    }
+ }

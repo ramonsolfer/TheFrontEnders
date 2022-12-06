@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root { 
+    /*claro*/
+    --color-light-50: #f8fafc;
+
+    /*escuro*/
+    --color-dark-50: #797984;
+    --color-dark-100: #312d37;
+    --color-dark-900: #000;
+
+    /*azul*/
+    --color-blue-1: rgb(118, 153, 248);
+    --color-blue-2: rgb(68, 152, 248);
+
+    --color-button-1: #6c63ff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--color-blue-2);
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+a {
+    text-decoration: none;
+}
+/* tirar a bolinha de listagem*/
+ul {
+    list-style: none;
+}
+/*marcar a página onde a pessoa está no menu*/
+.ativo {
+    color: rgb(68, 152, 248);
+    text-decoration: none;
+    font-weight: 1000;
+}
+/*menu*/
+.barranav {
+    position: absolute;
+    top: 0;
+    left: 0; 
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    color: rgb(255, 255, 255);
+}
+/* mudar a cor da empresa*/
+.barranav a {
+    color: rgb(255, 255, 255);
+}
+.barranav a:hover {
+    color: rgb(0, 0, 0);
+}
+/*mudar a span*/
+.barranav .logo span {
+    color: rgb(102, 159, 244);
+}
+/* links dos menus */
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+.nav-links > li {
+    margin: 0px 30px;
+}
+ul > a {
+    color: white;
+}
+.menu-btn {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    width: 40px;
+    cursor: pointer; 
+    display: none;
+}
+.container {
+    color: var(--color-light-50);
+    width: 80%;
+    height: 80%;
+    display: inline-flex;
+    background: rgb(51, 81, 121);
+    border-radius: 0px 20px 20px 20px;
+    flex-direction: row;
+}
+
+.formulario {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;   
+}
+
+.caixa-title-btn {
+    margin: 1px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.login-button {
+    display: flex;
+    margin: 10px 10px 10px 80%;
+    align-items: center;
+}
+
+.login-button button {
+    border: none;
+    background-color: #6c63ff;
+    padding: 0.4rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-button button:hover {
+    background-color: #190ee0f1;
+}
+
+.login-button button a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #fff;
+}
+.forma-title {
+    margin-bottom: 2px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin-left: 30px;
+    margin-right: 100px;
+    margin-top: 10px;
+}
+
+.forma-title h1::after {
+    content: '';
+    display: block;
+    width: 4rem;
+    height: 0.3rem;
+    background-color: #f70a0a;
+    margin: 0;
+    border-radius: 10px;
+}
+
+.gp-pessoal { 
+    margin-top: 5px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.entrada{
+    margin: 5px 20% 20px 25px;
+    border: none;
+    justify-content: center;
+    display: inline;
+    flex-direction: row;
+}
+
+.ddpessoal#nome{
+    margin: 5px 20px 5px 5px;
+}
+
+.ddpessoal#email{
+    margin: 5px px 5px 5px;
+}
+
+label.title-caixa {
+    width: 40%;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--color-blue-1);
+}
+
+.ddpessoal {
+    margin: 5px 5px 5px 5px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px var(--color-blue-2);
+    font-size: 14px;
+    width: 125px;
+    align-tracks: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.ddpessoal :hover{
+    margin: 5px 5px 5px 3px;
+    padding: 5px 5px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px #fffdfd;
+    font-size: 12px;
+    width: 150px;
+}
+
+.Celular{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.entrada-endereço{
+    margin: 5px 5px 5px 5px;
+    border: none;
+    justify-content: center;
+    display: inline;
+    flex-direction: row;
+    margin-right: 10px;
+}
+
+.ender-title {
+    justify-items: center;
+    font-size: 16px;
+    font-weight: 100;
+    margin: 30px 25px 10px 25px ;
+}
+
+label.title-caixa2 {
+    width: 30%;
+    margin-left: 15px;
+    margin-right: 2px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--color-blue-1);
+}
+
+.title-caixa2.cep label {
+    width: 30%;
+    margin-left: 15px;
+    margin-right: 25px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--color-blue-1);
+}
+
+.ddendereço {
+    margin: 2px 40px 2px 20px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px var(--color-blue-2);
+    font-size: 14px;
+    width: 125px;
+    align-tracks: center;
+    justify-content: center;
+    align-content: center;
+}/*ajustes caixas geral endereço*/
+
+.ddendereço#cep {
+    margin-right: 0px;
+}
+.title-caixa2#rua{
+    margin: 0;
+}
+
+.ddendereço#cidade{
+    color: #fff;
+    margin-right: 10px;
+}
+
+.ddendereço#rua, .ddendereço#bairro,
+.ddendereço#estado {
+    color: #fff;
+}
+
+.ddendereço#numero {
+    margin: 5px 100px 5px 5px;
+    width: 50px;
+}/*ajusta o tamanho da caixa numero do endereço*/
+
+.ddendereço#complemento {
+    width: 250px;
+} /* ajusta a largura da caixa complemento*/
+
+.btn-default {
+    background-color: #6c63ff;
+    margin: 30px 40px 50% 25%;
+    padding: 4px 50px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-default a {
+    color: white;
+    text-decoration: none;
+}
+
+.btn-default a:hover {
+    color: white;
+    transition: 0.3s;
+}
+
+.btn-default:hover {
+    background-color: #190ee0f1;
+    transition: 0.3s;
+}
+
+.form-image {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-color: var(--color-light-50);
+    min-width: auto;
+    max-width: auto;
+    border-radius: 0px 20px 20px 20px;
+}
+
+.form-image img {
+    justify-content: center;
+    height: auto;
+    width: 600px;
+}
+@media only screen and (max-width: 850px){
+    .menu-btn {
+        display: block;
+        margin: 10px 10px
+    }
+    .barranav {
+        padding: 0;
+    }
+    .barranav a {
+        color: rgb(255, 255, 255);
+    }
+    .logo {
+        position: absolute;
+        top: 30px;
+        left: 30px;
+    }
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        background-color: rgb(102, 134, 182);
+        transition: 0.3s ease-in;
+        margin-top: -900px;
+    }
+    .mobile-menu {
+        margin-top: 0px;
+        border-bottom-right-radius: 30%;
+    }
+    .nav-links > li {
+        margin: 30px auto;
+    }
+}
